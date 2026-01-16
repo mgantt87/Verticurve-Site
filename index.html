@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VertiCurve – Vertical Curve Calculator</title>
+
+  <meta name="description" content="VertiCurve is a fast, accurate vertical curve calculator for civil engineers, highway designers, and construction professionals." />
+  <meta name="keywords" content="vertical curve, civil engineering, highway design, PVI, PVC, PVT, grade curve" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --border: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #020617 0%, #020617 40%, #020617 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--card), #020617);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: linear-gradient(180deg, #3b82f6, #2563eb);
+      color: white;
+      padding: 0.9rem 1.6rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.45);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>VertiCurve</h1>
+      <p>
+        A fast, accurate vertical curve calculator built for civil engineers,
+        highway designers, and construction professionals.
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="features">
+        <div class="feature">
+          <h3>Vertical Curve Calculations</h3>
+          <p>
+            Crest and sag curves using standard civil engineering methods and
+            familiar terminology.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>PVI, PVC, & PVT</h3>
+          <p>
+            Compute stationing and elevations quickly with clear, consistent
+            outputs.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Field & Office Ready</h3>
+          <p>
+            Optimized for quick checks in the field or detailed design
+            verification at the desk.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Clean, Modern Interface</h3>
+          <p>
+            Dark-mode optimized design focused on clarity and speed — no clutter,
+            no distractions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer">
+        View on the App Store
+      </a>
+    </div>
+
+    <footer>
+      <p>
+        © <span id="year"></span> VertiCurve ·
+        <a href="privacy.html">Privacy Policy</a> ·
+        Contact: <a href="mailto:support@verticurve.app">support@verticurve.app</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
